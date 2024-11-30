@@ -16,7 +16,7 @@ The objectives of this project are:
 
 ### [1_code_modification](./1_code_modification)
 
-The standard source code comes from [CTSM](https://github.com/ESCOMP/CTSM), with the release tag: [ctsm5.2.005](https://github.com/ESCOMP/CTSM/tree/ctsm5.2.005)
+The standard source code comes from [CTSM](https://github.com/ESCOMP/CTSM), with the release tag: [ctsm5.2.005](https://github.com/ESCOMP/CTSM/tree/ctsm5.2.005). See modified code lines labeld with **!YS**.
 
 - Add a new command 'use_lcz' to the name-list for case build:
   - [‎bld/namelist_files/namelist_definition_ctsm.xml](./1_code_modification/bld/namelist_files/namelist_definition_ctsm.xml)
@@ -86,7 +86,7 @@ The scripts listed below are used to generate LCZ-based land surface inputs for 
 | 5.1  | WRF_LCZ    | [WRF_LCZ.ipynb](./5_generate_LCZ_inputs/5.1_WRF_LCZ/WRF_LCZ.ipynb) |
 | 5.2  | LI_LCZ     | [LI_LCZ.ipynb](./5_generate_LCZ_inputs/5.2_LI_LCZ/LI_LCZ.ipynb) |
 | 5.3  | CESM_LCZ   | [CESM_LCZ.ipynb](./5_generate_LCZ_inputs/5.3_CESM_LCZ/CESM_LCZ.ipynb) |
-| 5.4  | BASE       | [BASE.ipynb](./5_generate_LCZ_inputs/5.2_BASE/BASE.ipynb)    |
+| 5.4  | BASE       | [BASE.ipynb](./5_generate_LCZ_inputs/5.4_BASE/BASE.ipynb)    |
 | 5.5  | SENS       | [SENS.ipynb](./5_generate_LCZ_inputs/5.5_SENS/SENS.ipynb)    |
 
 ## [6_sourcemods_for_UrbanPLUMBER](./6_sourcemods_for_UrbanPLUMBER)
@@ -104,7 +104,7 @@ The scripts listed below are used to modify source code to use several parameter
   - [SurfaceAlbedoMod.F90](./6_sourcemods_for_UrbanPLUMBER/SourceMods/src.clm/SurfaceAlbedoMod.F90)
   - [WaterStateType.F90](./6_sourcemods_for_UrbanPLUMBER/SourceMods/src.clm/WaterStateType.F90) 
 
-## Acknowledgements
+## Acknowledgments
 
 - This work used the [ARCHER2 UK National Supercomputing Service](https://www.archer2.ac.uk). 
   The authors would like to acknowledge the assistance given by Research IT and the use of the HPC Pool and Computational Shared Facility at The University of Manchester. 
