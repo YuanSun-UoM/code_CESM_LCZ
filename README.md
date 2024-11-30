@@ -47,7 +47,7 @@ The scripts listed below are used for processing simulation output and visualiza
 
 | Num. | Subject                                                      | Simulation                      | Output data process                                          | Visualization                                                |
 | ---- | ------------------------------------------------------------ | ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 2.1  | [Flux variations at the UK-KingsCollege site][./2_simulation_output_analysis/2.1_KingsCollege_site] | CNTL, WRF_LCZ, LI_LCZ           | Use [Export.ipynb](./2_simulation_output_analysis/2.1_KingsCollege_site/Export.ipynb) to get [export_uk_kingscollege_df.csv](2_simulation_output_analysis/2.1_KingsCollege_site/export_uk_kingscollege_df.csv) | [Figure.ipynb](./2_simulation_output_analysis/2.1_KingsCollege_site/Figure.ipynb) |
+| 2.1  | [Flux variations at the UK-KingsCollege site](./2_simulation_output_analysis/2.1_KingsCollege_site) | CNTL, WRF_LCZ, LI_LCZ           | Use [Export.ipynb](./2_simulation_output_analysis/2.1_KingsCollege_site/Export.ipynb) to get [export_uk_kingscollege_df.csv](2_simulation_output_analysis/2.1_KingsCollege_site/export_uk_kingscollege_df.csv) | [Figure.ipynb](./2_simulation_output_analysis/2.1_KingsCollege_site/Figure.ipynb) |
 | 2.2  | [Taylor diagram over all flux sites](./2_simulation_output_analysis/2.2_Taylor_diagram_over_site) | CNTL, WRF_LCZ, LI_LCZ           | Use [Export.ipynb](./2_simulation_output_analysis/2.2_Taylor_diagram_over_site/Export.ipynb) to get [results4taylor.csv](./2_simulation_output_analysis/2.2_Taylor_diagram_over_site/results4taylor.csv) | [Figure.ipynb](././2_simulation_output_analysis/2.2_Taylor_diagram_over_site/Figure.ipynb) |
 | 2.3  | [Overall model performance](./2_simulation_output_analysis/2.3_overall_model_performance) | CNTL, WRF_LCZ, LI_LCZ, CESM_LCZ | Use [Export_ahf.ipynb](./2_simulation_output_analysis/2.3_overall_model_performance/Export_ahf.ipynb) and [Export_flux.ipynb](./2_simulation_output_analysis/2.3_overall_model_performance/Export_flux.ipynb) to get [ahf.csv](././2_simulation_output_analysis/2.3_overall_model_performance/ahf.csv) and [flux.csv](././2_simulation_output_analysis/2.3_overall_model_performance/flux.csv), respectively | [Figure.ipynb](./2_simulation_output_analysis/2.3_overall_model_performance/Figure.ipynb) |
 | 2.4  | [Model sensitivity to parameters](./2_simulation_output_analysis/2.4_model_sensitivity_to_parameters) | BASE, SENS                      | Use [Export.ipynb](./2_simulation_output_analysis/2.4_model_sensitivity_to_parameters/Export.ipynb) to get [result.csv](./2_simulation_output_analysis/2.4_model_sensitivity_to_parameters/result.csv) | [Figure.ipynb](./2_simulation_output_analysis/2.4_model_sensitivity_to_parameters/Figure.ipynb) |
@@ -57,12 +57,12 @@ The scripts listed below are used for processing simulation output and visualiza
 
 The figures listed below are used to illustrate details of implementing built LCZ in CLMU.
 
-| Subject                                                      | Visualization               |
-| ------------------------------------------------------------ | --------------------------- |
-| CLM5 representation hierarchy with default and LCZ classes   | [Figure](./3_illustration)  |
-| A modular way of incorporating LCZ alongside the default scheme | [Figure](./3_illustration/) |
-| Urban climate adaptation with LCZ                            | [Figure](./3_illustration)  |
-| Future directions                                            | [Figure](./3_illustration/) |
+| Subject                                                      | Visualization                                   |
+| ------------------------------------------------------------ | ----------------------------------------------- |
+| CLM5 representation hierarchy with default and LCZ classes   | [Figure](./3_illustration/clm5.pdf)             |
+| A modular way of incorporating LCZ alongside the default scheme | [Figure](./3_illustration/use_lcz.pdf)          |
+| Urban climate adaptation with LCZ                            | [Figure](./3_illustration/uk_map.pdf)           |
+| Future directions                                            | [Figure](./3_illustration/future_direction.pdf) |
 
 ## [4_supplimentary_information](./4_supplimentary_information)
 
@@ -70,11 +70,11 @@ The scripts listed below are used to show supplementary information such as inpu
 
 | Num. | Subject                                                      | Simulation                       | Output data process                                          | Visualization                                                |
 | ---- | ------------------------------------------------------------ | -------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 4.1  | [Flux tower locations](./4_suppilmentoary_information/4.1_flux_tower_locations) | NA                               | NA                                                           | [Figure.ipynb](./4_suppilmentoary_information/4.1_flux_tower_locations/Figure.ipynb) |
-| 4.2  | [Sensible heat flux over sites](./4_suppilmentoary_information/4.2_sensible_heat_flux) | CNTL, WRF_LCZ, LI_LCZ, CESM_LCZ  | Use *csv from [output](output)                               | [Figure.ipynb](./4_suppilmentoary_information/4.2_sensible_heat_flux/Figure.ipynb) |
-| 4.3  | [Displacement height and roughness length at UK-KingsCollege site](./4_suppilmentoary_information/4.3_displacement_height_roughness_length) | CNTL, S1, S2, S3                 | Use [Export.ipynb](./4_suppilmentoary_information/4.3_displacement_height_roughness_length/Export.ipynb) to get [result.csv](4_suppilmentoary_information/4.3_displacement_height_roughness_length/result.csv) | [Figure.ipynb](4_suppilmentoary_information/4.3_displacement_height_roughness_length/Figure.ipynb) |
-| 4.4  | [Momentum flux sensitivity to roughness length](./4_suppilmentoary_information/4.4_momemtum_flux_sensitivity) | BASE, SENS1, SENS2, SENS3, SENS4 | Use [Export.ipynb](./4_suppilmentoary_information/4.4_momemtum_flux_sensitivity/Export.ipynb) to get [result.csv](./4_suppilmentoary_information/4.4_momemtum_flux_sensitivity/result.csv) | [Figure.ipynb](./4_suppilmentoary_information/4.4_momemtum_flux_sensitivity/Figure.ipynb) |
-| 4.5  | [Flux variables over sites](./4_suppilmentoary_information/4.5_flux_varaibles_over_sites) | CNTL, WRF_LCZ, LI_LCZ, CESM_LCZ  | Use [Export.ipynb](./4_suppilmentoary_information/4.5_flux_varaibles_over_sites/Export.ipynb) to get *csv stored in [output](./4_suppilmentoary_information/4.5_flux_varaibles_over_sites/output) | [Figure.ipynb](./4_suppilmentoary_information/4.5_flux_varaibles_over_sites/Figure.ipynb) |
+| 4.1  | [Flux tower locations](./4_supplimentoary_information/4.1_flux_tower_locations) | NA                               | NA                                                           | [Figure.ipynb](./4_supplimentoary_information/4.1_flux_tower_locations/Figure.ipynb) |
+| 4.2  | [Sensible heat flux over sites](./4_supplimentoary_information/4.2_sensible_heat_flux) | CNTL, WRF_LCZ, LI_LCZ, CESM_LCZ  | Use *csv from [output](./4_supplimentoary_information/4.5_flux_varaibles_over_sites/output) | [Figure.ipynb](./4_supplimentoary_information/4.2_sensible_heat_flux/Figure.ipynb) |
+| 4.3  | [Displacement height and roughness length at UK-KingsCollege site](./4_supplimentoary_information/4.3_displacement_height_roughness_length) | CNTL, S1, S2, S3                 | Use [Export.ipynb](./4_supplimentoary_information/4.3_displacement_height_roughness_length/Export.ipynb) to get [result.csv](4_suppilmentoary_information/4.3_displacement_height_roughness_length/result.csv) | [Figure.ipynb](4_supplimentoary_information/4.3_displacement_height_roughness_length/Figure.ipynb) |
+| 4.4  | [Momentum flux sensitivity to roughness length](./4_supplimentoary_information/4.4_momemtum_flux_sensitivity) | BASE, SENS1, SENS2, SENS3, SENS4 | Use [Export.ipynb](./4_supplimentoary_information/4.4_momemtum_flux_sensitivity/Export.ipynb) to get [result.csv](./4_supplimentoary_information/4.4_momemtum_flux_sensitivity/result.csv) | [Figure.ipynb](./4_supplimentoary_information/4.4_momemtum_flux_sensitivity/Figure.ipynb) |
+| 4.5  | [Flux variables over sites](./4_supplimentoary_information/4.5_flux_varaibles_over_sites) | CNTL, WRF_LCZ, LI_LCZ, CESM_LCZ  | Use [Export.ipynb](./4_supplimentoary_information/4.5_flux_varaibles_over_sites/Export.ipynb) to get *csv stored in [output](./4_supplimentoary_information/4.5_flux_varaibles_over_sites/output) | [Figure.ipynb](./4_supplimentoary_information/4.5_flux_varaibles_over_sites/Figure.ipynb) |
 
 ## [5_generate_LCZ_inputs][./5_generate_LCZ_inputs]
 
