@@ -19,7 +19,7 @@ The objectives of this project are:
 The standard source code comes from [CTSM](https://github.com/ESCOMP/CTSM), with the release tag: [ctsm5.2.005](https://github.com/ESCOMP/CTSM/tree/ctsm5.2.005)
 
 - Add a new command 'use_lcz' to the name-list for case build:
-  - [‎bld/namelist_files/namelist_definition_ctsm.xml](./1_code_modification/bld/bld/namelist_files/namelist_definition_ctsm.xml)
+  - [‎bld/namelist_files/namelist_definition_ctsm.xml](./1_code_modification/bld/namelist_files/namelist_definition_ctsm.xml)
 
 - Apply 'use_lcz' to determine land cover classification:
   - [src/main/landunit_varcon.F90](./1_code_modification/src/main/landunit_varcon.F90)
