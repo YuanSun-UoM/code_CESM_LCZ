@@ -77,7 +77,7 @@ The scripts listed below are used to show supplementary information such as inpu
 | 4.5  | [Adaptation with LCZ](./4_supplimentary_information/4.5_adaptation_with_lcz) | CNTL, BASE                       | Use [Export.ipynb](./4_supplimentary_information/4.5_adaptation_with_lcz/Export.ipynb) to get results at [grid](./4_supplimentary_information/4.5_adaptation_with_lcz/result_grid.csv) and [landunit](./4_supplimentary_information/4.5_adaptation_with_lcz/result_lnd.csv) level | [Figure.ipynb](./4_supplimentary_information/4.5_adaptation_with_lcz/Figure.ipynb) |
 | 4.6  | [Flux variables over sites](./4_supplimentary_information/4.6_flux_varaibles_over_sites) | CNTL, WRF_LCZ, LI_LCZ, CESM_LCZ  | Use [Export.ipynb](./4_supplimentary_information/4.6_flux_varaibles_over_sites/Export.ipynb) to get *csv stored in [output](./4_supplimentary_information/4.6_flux_varaibles_over_sites/output/) | [Figure.ipynb](./4_supplimentary_information/4.6_flux_varaibles_over_sites/Figure.ipynb) |
 
-## [5_generate_LCZ_inputs][./5_generate_LCZ_inputs]
+## [5_generate_LCZ_inputs](./5_generate_LCZ_inputs)
 
 The scripts listed below are used to generate LCZ-based land surface inputs for simulations. **note:** For LCZ simulations, we set **nlevurb = 5**. 
 
@@ -85,9 +85,9 @@ The scripts listed below are used to generate LCZ-based land surface inputs for 
 | ---- | ---------- | ------------------------------------------------------------ |
 | 5.1  | WRF_LCZ    | [WRF_LCZ.ipynb](./5_generate_LCZ_inputs/5.1_WRF_LCZ/WRF_LCZ.ipynb) |
 | 5.2  | LI_LCZ     | [LI_LCZ.ipynb](./5_generate_LCZ_inputs/5.2_LI_LCZ/LI_LCZ.ipynb) |
-| 5.3  | CESM_LCZ   | [CESM_LCZ.ipynb](./5_generate_LCZ_inputs/5.2_CESM_LCZ/CESM_LCZ.ipynb) |
+| 5.3  | CESM_LCZ   | [CESM_LCZ.ipynb](./5_generate_LCZ_inputs/5.3_CESM_LCZ/CESM_LCZ.ipynb) |
 | 5.4  | BASE       | [BASE.ipynb](./5_generate_LCZ_inputs/5.2_BASE/BASE.ipynb)    |
-| 5.5  | SENS       | [SENS.ipynb](./5_generate_LCZ_inputs/5.2_SENS/SENS.ipynb)    |
+| 5.5  | SENS       | [SENS.ipynb](./5_generate_LCZ_inputs/5.5_SENS/SENS.ipynb)    |
 
 ## [6_sourcemods_for_UrbanPLUMBER](./6_sourcemods_for_UrbanPLUMBER)
 
