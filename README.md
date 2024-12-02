@@ -106,7 +106,7 @@ The scripts listed below are used to modify source code to use several parameter
 
 ## Acknowledgments
 
-- This work used the [ARCHER2 UK National Supercomputing Service](https://www.archer2.ac.uk). 
+- This work used the [ARCHER2 UK National Supercomputing Service](https://www.archer2.ac.uk) and [JASMIN, the UK’s collaborative data analysis environment](https://www.jasmin.ac.uk/). 
   The authors would like to acknowledge the assistance given by Research IT and the use of the HPC Pool and Computational Shared Facility at The University of Manchester. 
 - The support of [Dr. Douglas Lowe](https://github.com/douglowe) and Christopher Grave from Research IT at The University of Manchester is gratefully acknowledged. 
 - [Zhonghua Zheng](https://github.com/zhonghua-zheng) appreciates the support provided by the academic start-up funds from the Department of Earth and Environmental Sciences at The University of Manchester.
