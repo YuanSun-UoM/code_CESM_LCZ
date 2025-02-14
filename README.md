@@ -61,7 +61,6 @@ The figures listed below are used to illustrate details of implementing built LC
 | ------------------------------------------------------------ | ----------------------------------------------- |
 | CLM5 representation hierarchy with default and LCZ classes   | [Figure](./3_illustration/clm5.pdf)             |
 | A modular way of incorporating LCZ alongside the default scheme | [Figure](./3_illustration/use_lcz.pdf)          |
-| Urban climate adaptation with LCZ                            | [Figure](./3_illustration/uk_map.pdf)           |
 | Future directions                                            | [Figure](./3_illustration/future_direction.pdf) |
 
 ## [4_supplimentary_information](./4_supplimentary_information)
