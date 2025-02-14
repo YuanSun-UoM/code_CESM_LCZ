@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository is supplementary to the manuscript "**Enhancing Urban Land Cover Representation on a Global Scale Based on Local Climate Zones in the Community Earth System Model**".
+This repository is supplementary to the manuscript "**Enhancing Global-Scale Urban Land Cover Representation Using Local Climate Zones in the Community Earth System Model**".
 
 The objectives of this project are:
 
@@ -16,18 +16,18 @@ The objectives of this project are:
 
 ### [1_code_modification](./1_code_modification)
 
-The standard source code comes from [CTSM](https://github.com/ESCOMP/CTSM), with the release tag: [ctsm5.2.005](https://github.com/ESCOMP/CTSM/tree/ctsm5.2.005). See modified code lines labeld with **!YS**.
+The standard source code comes from [CTSM](https://github.com/ESCOMP/CTSM), with the release tag: [ctsm5.2.005](https://github.com/ESCOMP/CTSM/tree/ctsm5.2.005). See modified code lines labeled with **!YS**.
 
-- Add a new command 'use_lcz' to the name-list for case build:
+- Add a new command `use_lcz` to the namelist for case build:
   - [‎bld/namelist_files/namelist_definition_ctsm.xml](./1_code_modification/bld/namelist_files/namelist_definition_ctsm.xml)
 
-- Apply 'use_lcz' to determine land cover classification:
+- Apply `use_lcz` to determine land cover classification:
   - [src/main/landunit_varcon.F90](./1_code_modification/src/main/landunit_varcon.F90)
   - [src/main/initGridCellsMod.F90](./1_code_modification/src/main/initGridCellsMod.F90)
   - [src/main/subgridMod.F90](./1_code_modification/src/main/subgridMod.F90)
 - Define LCZ classes:
   - [src/main/LandunitType.F90](./1_code_modification/src/main/LandunitType.F90)
-- Modify the PIO process for a time-varying urban variable (T_BUILDING_MAX):
+- Modify the PIO process for a time-varying urban variable `T_BUILDING_MAX`:
   - [src/cpl/share_esmf/UrbanTimeVarType.F90](./1_code_modification/src/cpl/share_esmf/UrbanTimeVarType.F90)
   - [src/cpl/mct/UrbanTimeVarType.F90](./1_code_modification/src/cpl/mct/UrbanTimeVarType.F90)
 
@@ -35,7 +35,7 @@ The standard source code comes from [CTSM](https://github.com/ESCOMP/CTSM), with
 
   - [src/dyn_subgrid/dynInitColumnsMod.F90](./1_code_modification/src/dyn_subgrid/dynInitColumnsMod.F90)
 
-- Apply 'use_lcz' to control model set-up:
+- Apply `use_lcz` when controlling model set-up:
 
   - [src/main/clm_varctl.F90](./1_code_modification/src/main/clm_varctl.F90)
 
@@ -77,7 +77,7 @@ The scripts listed below are used to show supplementary information such as inpu
 
 ## [5_generate_LCZ_inputs](./5_generate_LCZ_inputs)
 
-The scripts listed below are used to generate LCZ-based land surface inputs for simulations. **note:** For LCZ simulations, we set **nlevurb = 5**. 
+The scripts listed below are used to generate LCZ-based land surface inputs for simulations. **Note:** For LCZ simulations, we set **nlevurb = 5**. 
 
 | Num. | Simulation | Input data process                                           |
 | ---- | ---------- | ------------------------------------------------------------ |
@@ -89,11 +89,11 @@ The scripts listed below are used to generate LCZ-based land surface inputs for 
 
 ## [6_sourcemods_for_UrbanPLUMBER](./6_sourcemods_for_UrbanPLUMBER)
 
-The scripts listed below are used to modify source code to use several parameters provided by Urban-PLUMBER. Lines between **!KO** are modified by [Keith W Oleson](https://staff.ucar.edu/users/oleson) while **!YS** by [Yuan Sun](https://github.com/YuanSun-UoM).
+The scripts listed below modify source code to use several parameters provided by Urban-PLUMBER. Lines between **!KO** are modified by [K. W. O.](https://staff.ucar.edu/users/oleson) while **!YS** by [Y. S.](https://github.com/YuanSun-UoM).
 
-- Modifiy the 'nlevurb':
+- Modifiy the `nlevurb`:
   - [clm_varpar.F90](./6_sourcemods_for_UrbanPLUMBER/SourceMods/src.clm/clm_varpar.F90)
-- Add a new parameter 'wall_to_plan_area_ratio':
+- Add a new parameter `wall_to_plan_area_ratio`:
   - [LandunitType.F90](./6_sourcemods_for_UrbanPLUMBER/SourceMods/src.clm/LandunitType.F90)
   - [UrbanParamsType.F90](./6_sourcemods_for_UrbanPLUMBER/SourceMods/src.clm/UrbanParamsType.F90)
 - Determine air conditioning adoption:
@@ -104,12 +104,14 @@ The scripts listed below are used to modify source code to use several parameter
 
 ## Acknowledgments
 
-- This work used the [ARCHER2 UK National Supercomputing Service](https://www.archer2.ac.uk) and [JASMIN, the UK’s collaborative data analysis environment](https://www.jasmin.ac.uk/). 
-  The authors would like to acknowledge the assistance given by Research IT and the use of the HPC Pool and Computational Shared Facility at The University of Manchester. 
-- The support of [Douglas Lowe](https://github.com/douglowe) and Christopher Grave from Research IT at The University of Manchester is gratefully acknowledged. 
-- [Zhonghua Zheng](https://github.com/zhonghua-zheng) appreciates the support provided by the academic start-up funds from the Department of Earth and Environmental Sciences at The University of Manchester.
-- [Yuan Sun](https://github.com/YuanSun-UoM) is supported by the PhD studentship of Zhonghua Zheng's academic start-up funds.
-- Contributions from [Keith W Oleson](https://staff.ucar.edu/users/oleson) are based upon work supported by the NSF National Center for Atmospheric Research, which is a major facility sponsored by the U.S. National Science Foundation under Cooperative Agreement No. 1852977.
-- Contributions from [Matthias Demuzere](https://github.com/matthiasdemuzere) are supported by European Union’s HORIZON Research and Innovation Actions under grant agreement No. 101137851, project CARMINE (Climate-Resilient Development Pathways in Metropolitan Regions of Europe, https://www.carmine-project.eu/).
-- We appreciate the inspiration and encouragement from Dr. Jason Ching.
-- The authors declare no conflict of interest.sw
+- We dedicate this work to the memory of Dr. Jason Ching, whose groundbreaking contributions and inspiring vision laid the foundation for this research. His legacy continues to guide and inspire us. 
+- This work used the [ARCHER2 UK National Supercomputing Service](https://www.archer2.ac.uk) and [JASMIN, the UK’s collaborative data analysis environment](https://www.jasmin.ac.uk/). This work was supported by the Natural Environment Research Council.
+- The authors would like to acknowledge the assistance of Research IT and the use of the HPC Pool and Computational Shared Facility at The University of Manchester. The support of [Dr. Douglas Lowe](https://github.com/douglowe) and Christopher Grave from Research IT at The University of Manchester is gratefully acknowledged. 
+- We thank Prof. David M. Schultz for his comments on an earlier version of the manuscript.
+- Additionally, we appreciate the assistance of Dr. Congyuan Li at the National University of Defense Technology in China.
+- [Z. Z.](https://github.com/zhonghua-zheng) appreciates the support provided by the academic start-up funds from the Department of Earth and Environmental Sciences at The University of Manchester.
+- [Y. S.](https://github.com/YuanSun-UoM) is supported by the PhD studentship of Zhonghua Zheng's academic start-up funds.
+- Contributions from [K. W. O.](https://staff.ucar.edu/users/oleson) are based upon work supported by the NSF National Center for Atmospheric Research, which is a major facility sponsored by the U.S. National Science Foundation under Cooperative Agreement No. 1852977.
+- Contributions from [M. D.](https://github.com/matthiasdemuzere) are supported by the European Union’s HORIZON Research and Innovation Actions under grant agreement No. 101137851, project [CARMINE (Climate-Resilient Development Pathways in Metropolitan Regions of Europe)](https://www.carmine-project.eu/).
+- L. Z. acknowledges the support of the US National Science Foundation (CAREER award grant no. 2145362).
+- The authors declare no conflict of interest.
