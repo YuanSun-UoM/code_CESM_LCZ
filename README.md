@@ -104,7 +104,7 @@ The scripts listed below modify source code to use several parameters provided b
 ## Acknowledgments
 
 - We dedicate this work to the memory of Dr. Jason Ching, whose groundbreaking contributions and inspiring vision laid the foundation for this research. His legacy continues to guide and inspire us. 
-- This work used the [ARCHER2 UK National Supercomputing Service](https://www.archer2.ac.uk) and [JASMIN, the UK’s collaborative data analysis environment](https://www.jasmin.ac.uk/). This work was supported by the Natural Environment Research Council.
+- This work used the [ARCHER2 UK National Supercomputing Service](https://www.archer2.ac.uk) and [JASMIN, the UK’s collaborative data analysis environment](https://www.jasmin.ac.uk/). This work was supported by the Natural Environment Research Council, UK.
 - The authors would like to acknowledge the assistance of Research IT and the use of the HPC Pool and Computational Shared Facility at The University of Manchester. The support of [Dr. Douglas Lowe](https://github.com/douglowe) and Christopher Grave from Research IT at The University of Manchester is gratefully acknowledged. 
 - We thank Prof. David M. Schultz for his comments on an earlier version of the manuscript.
 - Additionally, we appreciate the assistance of Dr. Congyuan Li at the National University of Defense Technology in China.
